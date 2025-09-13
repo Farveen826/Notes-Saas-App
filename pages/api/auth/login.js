@@ -32,7 +32,6 @@ export default async function handler(req, res) {
 
     const user = userResult.rows[0];
     const isValidPassword = await verifyPassword(password, user.password_hash);
-
     if (!isValidPassword) {
       return res.status(401).json({ error: 'Invalid credentials' });
     }

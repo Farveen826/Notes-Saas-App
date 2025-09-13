@@ -1,16 +1,18 @@
 {
   "name": "notes-saas-app",
   "version": "1.0.0",
+    "type": "module",
   "description": "Multi-tenant SaaS Notes Application",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "init-db": "node scripts/init-db.js"
+    "init-db": "node ./scripts/init-db.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "dotenv": "^17.2.2",
     "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.263.1",
     "next": "^14.0.0",

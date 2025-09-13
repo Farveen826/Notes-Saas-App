@@ -1,5 +1,5 @@
-import NotesApp from '../components/NotesApp'
+import NotesApp from '../components/NotesApp';
 
 export default function Home() {
-  return <NotesApp />
+  return <NotesApp />;
 }

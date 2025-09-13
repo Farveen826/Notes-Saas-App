@@ -1,6 +1,15 @@
+import dotenv from 'dotenv';
+dotenv.config({ path: '.env.local' });
+
+// DEBUG: Check what we're reading
+console.log('DEBUG - DATABASE_URL first 60 chars:', process.env.DATABASE_URL?.substring(0, 60));
+console.log('DEBUG - Full DATABASE_URL:', process.env.DATABASE_URL);
+
 import pool from '../lib/db.js';
 import { hashPassword } from '../lib/auth.js';
+// ... rest of your code
 
+// ... rest of your init-db.js code
 async function initDatabase() {
   try {
     console.log('Starting database initialization...');
